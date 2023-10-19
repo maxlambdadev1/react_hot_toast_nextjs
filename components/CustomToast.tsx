@@ -36,7 +36,7 @@ export const CustomToast: React.FC<Props> = ({toast, t }) => {
                     <div className={styles.menu_item} onClick={() => menu_item_click('fullscreen')} >Fullscreen</div>
                 </div>
             </div>
-            <div className={`${styles.detail_container} ${isDetailed ? '' : styles['hide']}`} >
+            <div className={`${styles.detail_container} ${isDetailed ? '' : styles.hide }`} >
                 abcdef
             </div>
         </div>

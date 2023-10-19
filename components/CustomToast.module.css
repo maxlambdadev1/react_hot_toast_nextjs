@@ -67,7 +67,7 @@
     color : #aaa;
 }
 .hide {
-    display : none;
+    display : none!important;
 }
 .detail_container {
     position : absolute;
