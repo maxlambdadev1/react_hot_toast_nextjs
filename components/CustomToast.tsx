@@ -5,8 +5,9 @@ import styles from '@/components/CustomToast.module.css';
 type Props = {
     toast : any
     t : any
+    pos : string
 }
-export const CustomToast: React.FC<Props> = ({toast, t }) => {
+export const CustomToast: React.FC<Props> = ({toast, t, pos }) => {
 
     const [isPosition, setIsPosition] = useState(false);
     const [isDetailed, setIsDetailed] = useState(false);
@@ -19,9 +20,9 @@ export const CustomToast: React.FC<Props> = ({toast, t }) => {
         setIsSettings(false);
     }
     return (
-        <div className={`${styles.toast_root} ${styles[selectedSetting]}`}>
+        <div className={`${styles.toast_root} ${styles[pos]} ${styles[selectedSetting]}`}>
             <div className={styles.toast_container}>
-                Custom and <b>bold</b>
+                Custom and <b>bold</b> &nbsp;
                 <button onClick={() => toast.dismiss(t.id)}>
                     Dismiss
                 </button>

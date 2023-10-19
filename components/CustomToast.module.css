@@ -60,6 +60,10 @@
     background-color: #FF5CFA;
     z-index : 100;
 }
+.top .settings_menu {
+    top : 0;
+    bottom : unset;
+}
 .settings_menu .menu_item {
     color : white;
 }
@@ -78,4 +82,7 @@
     display : flex;
     justify-content: center;
     align-items: center;
+}
+.top .detail_container {
+    top : calc(100% + 5px); 
 }
